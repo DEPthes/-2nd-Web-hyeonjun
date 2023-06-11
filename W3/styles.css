@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+  }
+  header {
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: beige;
+  }
+  
+  h2 {
+    color: white;
+  }
+  
+  .quote {
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: red;
+  }
+  
+  .blog-post {
+    margin-bottom: 40px;
+    color: antiquewhite;
+  }
+  
+  .blog-post h3 {
+    color: aquamarine;
+  }
+  
+  .blog-post p {
+    line-height: 1.6;
+  }
+  

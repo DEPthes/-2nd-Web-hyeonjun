@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>방명록</title>
+  <link rel="stylesheet" type="text/css" href="styles4.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href ="home.html">홈</a></li>
+        </ul>
+    </nav>
+</header>
+  <h1>방명록</h1>
+
+  <form id="guestbook-form">
+    <label for="name">이름:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="message">메시지:</label>
+    <textarea id="message" name="message" required></textarea> <!-- 사용자가 여러 줄의 텍스트를 입력할 수 있는 텍스트 입력 영역을 정의할 때 사용합니다.-->
+    <br>
+    <button type="submit">작성하기</button>
+  </form>
+
+  <div id="guestbook-entries">
+    <div class="entry">
+      <h3>친구</h3>
+      <p>안녕하세요! 방명록을 남깁니다.</p>
+    </div>
+    <div class="entry">
+      <h3>친구2</h3>
+      <p>방문해서 반갑습니다!</p>
+    </div>
+  </div>
+</body>
+</html>
