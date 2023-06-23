@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:black;
+    list-style: none;
+}
+/* 상단  */
+header {
+    list-style: none;
+    text-align: center;
+    border-bottom: 3px solid gray;
+    background: #EFE6F0;
+}
+/* ship name */
+.ship > h1 {
+    text-align: center;
+    font-size: 60px;
+}
+.HOME {
+    color: skyblue;
+    text-decoration: none;
+}
+body{
+    display: block;
+}
+/* 팀프로필 */
+
+.TeamP {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    align-items: center;
+    background-color: aquamarine;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .avatar {
+    margin-bottom: 10px;
+  }
+ul.TeamP li img{
+    width: 200px;
+    border-radius: 5%;
+    margin-right: 10px;
+    width : 200px; 
+}
+ul.TeamP span{
+    text-align: center;
+}
+
+.trip {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+}
+.trip > image {
+    width: 60%;
+}
+video{
+    left: 450px;
+    width: 500px;
+    height: 300px;
+}

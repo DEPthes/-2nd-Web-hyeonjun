@@ -1,0 +1,166 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+/* 글자 설정 */
+h1 {
+    font-size: 48px;
+    font-weight: 100px;
+  }
+  .contents1{
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  .contents1_bold{
+    font-size: 18px;
+    font-weight: bold;
+  }  
+ /* 위에꺼 설정 */
+ .intro_bg{
+    background-image:url("../images/intro.jpg");
+    width:100%;
+    height:718px;
+}
+ .header{
+    display: flex;
+    width: 1280px;
+    margin: auto;
+    height: 86px;
+ }
+ .nav{
+    display:flex;
+    width:calc(1280px - 300px);
+    justify-content: flex-end;
+    line-height: 86px;
+ }
+ .nav > li {
+    margin-left: 84px;
+ }
+ .nav > li > a {
+    color: #fff;
+ }
+  .searchArea > form > input{
+    border: none;
+    width:250px;
+    height:40px;
+    background:#0489B1;
+    color:#fff;
+    padding-left: 10px;
+  }
+  .searchArea > form > span{
+    width: 50px;
+    color:snow;
+    font-weight: bold;
+    cursor: pointer;
+  }
+ .searchArea{
+    width: 300px;
+    height: 40px;
+    background: #0489B1;
+    border-radius: 5px;
+    margin-top:24px;
+ }
+
+ .intro_text {
+    text-align: center;
+    width: 100%;
+    margin: 231px auto 231px auto;
+    height: 40px;
+ }
+ .intro_text > h1 {
+    color:#E6F7FF;
+ }
+
+ .intro_text > h2 {
+    color: pink;
+ }
+
+ /* 메인 텍스트 */
+ .main_text{
+    width: 100%;
+    height: 601px;
+    margin-top: -132px;
+    background: #f1f2f3;
+   }
+ /* 스킬존 */
+
+.need {
+    background: #DBCACF;
+    text-align: center;
+}
+.need > h1 {
+    padding-top: 116px;
+}
+
+/* 아이콘 */
+.icons{
+    display:flex;
+    width: 1280px;
+    margin:auto;
+  }
+  
+  
+  .icons > li {
+    flex: 1;
+    background: white;
+    height: 302px;
+    margin-top: 49px;
+    text-align: center;
+  }
+ 
+  .icons > li:not(:last-child){
+    margin-right: 20px;
+  }
+  .icons > li > .icon_img{
+    margin-top: 18px;
+    
+  }
+  .icons .contents2{
+    width: 250px;
+    margin:auto;
+    letter-spacing: -1px;
+ 
+  }
+
+  /* end */
+  .end {
+    display: flex;
+    justify-content: center;
+    background: #f1f2f3;
+  }
+
+
+  /* Real end */
+  .end2{
+    width: 100%;
+    height: 418px;
+    text-align: center;
+  }
+ 
+  .end2 > ul{
+ 
+    padding-top: 138px;
+  }
+ 
+  .end2 > ul > li {
+
+    text-align: center;
+  }
+ 
+  .end2 > ul > li > div > h1,
+  .end2 > ul > li > div {
+    color: skyblue;
+  } 
+  .more2{
+    width:220px;
+    height:40px;
+    border: 1px solid skyblue;
+    cursor: pointer;
+    line-height: 40px;
+    margin: 16px auto;
+  }

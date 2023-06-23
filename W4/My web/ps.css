@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:black;
+    list-style: none;
+    background: skyblue;
+}
+/* 상단  */
+.header {
+    list-style: none;
+    text-align: center;
+    border-bottom: 3px solid gray;
+    background: #EFE6F0;
+}
+
+/* 이미지 동영상 설정 */
+
+.main_photo{
+ /*    width: 100%; */
+    position: sticky;
+    top: 0%;
+}
+
+.sub_photo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column
+    
+}
+
+.sub_photo > img {
+    width: 200px;
+    height: 300px;
+}
+.content {
+    color: white;
+    font-size: 50px;
+}
+
