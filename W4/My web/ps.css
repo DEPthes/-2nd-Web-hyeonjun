@@ -23,6 +23,10 @@
     top: 0%;
 }
 
+.main_photo img {
+    position: absolute;
+}
+
 .sub_photo{
     display: flex;
     justify-content: space-between;

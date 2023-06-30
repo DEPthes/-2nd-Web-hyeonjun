@@ -29,12 +29,19 @@ body{
 
 .TeamP {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 20px;
-    align-items: center;
     background-color: aquamarine;
     justify-content: space-between;
     text-align: center;
+    padding-top: 20px;
+  }
+
+  .TeamP li{
+    width: 25%;
+    box-sizing: content-box;
+    display: flex;
+    
   }
   
   .avatar {
@@ -44,7 +51,8 @@ ul.TeamP li img{
     width: 200px;
     border-radius: 5%;
     margin-right: 10px;
-    width : 200px; 
+    height : 200px; 
+    object-fit: cover;
 }
 ul.TeamP span{
     text-align: center;
