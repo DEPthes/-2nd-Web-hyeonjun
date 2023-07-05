@@ -1,15 +1,18 @@
-let value = 0;
+const input = document.querySelector(".result");
+const input2 = document.querySelector(".ten");
+
 
 function increase() {
-  value++;
-  document.querySelector(".result").textContent = value;
+  input2.innerText = parseInt(input.value) + parseInt(input2.innerText);
 }
 
 function decrease() {
-    if (value === 0 ) {
-        alert("0이 최소값입니다.");
-    }
-    else if (value > 0) {
-  value--;
-  document.querySelector(".result").textContent = value;}
+  if (parseInt(input2.innerText) - parseInt(input.value) >= 0 ){
+  input2.innerText = parseInt(input2.innerText) - parseInt(input.value)
+}else {
+  alert("0이 최소값입니다.");
 }
+}
+
+document.querySelector(".minus").addEventListener("click", decrease);
+document.querySelector(".plus").addEventListener("click", increase);
