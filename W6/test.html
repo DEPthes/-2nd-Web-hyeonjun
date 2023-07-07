@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>투두리스트</title>
+  </head>
+</head>
+<body>
+  <form class="hidden" id="login-form">
+    <div>
+    <input
+      required
+      maxlength="15"
+      type="text"
+      placeholder="What is your name?" />
+    </div>
+  </form>
+  <span id="greeting" class="hidden"></span>
+  <h1>Todo List</h1>
+  <h2 id="clock">00:00:00</h2>
+  <form id ="todo-form">
+    <input type="text" id="inputItem" placeholder="할 일을 입력하세요">
+    <input type="text" id="inputCategory" placeholder="카테고리를 입력하세요">
+    <button onclick="addItem()">추가</button>
+
+    <div class = "cg">
+      <label for="filterCategory">카테고리 선택:</label>
+      <select id="filterCategory" onchange="filterByCategory()">
+        <option value="all">전체</option>
+        <option value="운동">운동</option>
+        <option value="공부">공부</option>
+        <option value="쇼핑">쇼핑</option>
+      </select>
+    </div>
+  </form>
+  <main>
+  <ul id="todoList">
+  </ul>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/greetings.js"></script>
+</body>
+</html>

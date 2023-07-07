@@ -20,6 +20,7 @@ function paintGreetings(username) {
 
 }
 
+//function removename(event) {savedUsername.innerText = "";}
 
 loginForm.addEventListener("submit", onLoginSubmit);
 const savedUsername = localStorage.getItem(USERNAME_KEY);
@@ -35,4 +36,6 @@ if(savedUsername === null){
 } else { 
     paintGreetings(savedUsername);
 }
+
+//savedUsername.addEventListener("click", removename);  
 
