@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: whitesmoke;
+  list-style: none;
+  background-color: seagreen;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+/* 외각 꾸미기 */
+.container {
+  width: 630px;
+  height: 650px;
+  outline: dashed 3px wheat;
+  text-align: center;
+  margin: auto;
+  flex-direction: column; 
+}
+input {
+  width:200px;
+  height:100px;
+  font-size:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px blue;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  
+}
+.de {
+  flex-direction: column; 
+  align-items: center;
+  padding-top: 30px;
+}
+.child {
+  font-size: 24px;
+  font-family: arial;
+  flex-direction: column; 
+  padding-top: 30px;
+}
+
+/*검색창 꾸미기*/
+ .searchBox {
+  padding: 100px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px gray;
+  outline: none;
+}
+/*검색창 작성 중에도 효과 X*/
+.searchBox:focus {
+  border-top: 0px none;
+  border-left: 0px none;
+  border-right: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
