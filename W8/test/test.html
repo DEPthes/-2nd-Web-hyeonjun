@@ -1,0 +1,54 @@
+<!-- main.html -->
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <style>
+        .card {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 5px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cardContainer"></div>
+    <script src="../display.js"></script>
+    <script>
+        const pairCount = parseInt(prompt("카드의 쌍 개수를 입력하세요."));
+        const totalCards = pairCount * 2;
+
+        const cardContainer = document.getElementById("cardContainer");
+
+        const numbers = generateNumbers(pairCount);
+        const shuffledCards = shuffle(numbers);
+        
+        for (let i = 0; i < totalCards; i++) {
+            const card = document.createElement("div");
+            card.classList.add("card");
+            card.innerText = shuffledCards[i];
+            cardContainer.appendChild(card);
+        }
+
+        function generateNumbers(pairCount) {
+            const numbers = [];
+            for (let i = 1; i <= pairCount; i++) {
+                numbers.push(i);
+                numbers.push(i);
+            }
+            return numbers;
+        }
+
+        function shuffle(array) {
+            return array.slice().sort(() => Math.random() - 0.5);
+        }
+    </script>
+</body>
+</html>

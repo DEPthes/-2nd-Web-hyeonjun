@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    background-color: whitesmoke;
+}
+
+
+
+
+input[type='textbox'] {
+    margin-bottom: 10px;
+    width: 140px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    color: white;
+}

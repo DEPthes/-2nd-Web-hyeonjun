@@ -14,17 +14,11 @@ let city = document.querySelector('#city')
 
 let button = document.querySelector('#changeCity')
 
-let count = 0
-let cityName = 'Seoul'
+
 button.addEventListener('click',func)
 function func(event){
     event.preventDefault()
-    count++
-    
-    
-    if(count === 0){ cityName = 'Seoul'}
-    else{cityName =  city.value}
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value ?? 'seoul'}&appid=${API_KEY}`
 
 fetch(url)
     .then(response => response.json())
